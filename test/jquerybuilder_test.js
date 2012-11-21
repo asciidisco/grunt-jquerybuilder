@@ -1,3 +1,5 @@
+'use strict';
+
 var grunt = require('grunt');
 // Load local tasks.
 grunt.loadTasks('tasks');

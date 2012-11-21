@@ -49,6 +49,7 @@ grunt custom:-ajax
 ## Release History
 ### 0.1.1
 + Housekeeping (README additions, log output, etc.)
+
 ### 0.1.0
 + Initial Release
 

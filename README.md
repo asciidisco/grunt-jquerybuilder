@@ -31,9 +31,9 @@ Example Lo-Dash optimizer grunt file config entry:
       // the parts you want to exclude from your build
       // possible values ['ajax', 'css', 'deprecated', 'dimensions', 'effects', 'offset']
       exclude: ['ajax'],
-      // the jQuery version (currently only 1.8.3 is supported)
+      // the jQuery version (currently only 1.8.3 is supported) - defaults to 1.8.3
       version: '1.8.3',
-      // output location (relative to your grunt.js file location)
+      // output location (relative to your grunt.js file location) - defaults to false
       dest: 'build/jquery.custom.js',
       // minify the output (true or false)
       minify: false
@@ -47,6 +47,8 @@ grunt custom:-ajax
 ```
 
 ## Release History
+### 0.1.1
++ Housekeeping (README additions, log output, etc.)
 ### 0.1.0
 + Initial Release
 

@@ -30,6 +30,7 @@ module.exports = function (grunt) {
 
       // proceed with file content
       if (transport.type === 'content') {
+        grunt.log.write('Writing custom jQuery file');
         grunt.file.write(options.config.dest, transport.content);
       }
 
@@ -43,7 +44,6 @@ module.exports = function (grunt) {
       debug: !!config.debug
     }, fileWriter);
 
-    return done;
   });
 
 };

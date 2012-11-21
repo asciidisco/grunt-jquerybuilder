@@ -23,7 +23,7 @@ grunt.loadNpmTasks('grunt-jquerybuilder');
 Load the grunt-jquerybuilder task as described in 'Getting started' and add your jQuery builder
 configuration to your grunt file:
 
-Example Lo-Dash optimizer grunt file config entry:
+Example jQuery builder grunt file config entry:
 
 ```javascript
 // ... grunt file contents

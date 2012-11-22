@@ -47,6 +47,9 @@ grunt custom:-ajax
 ```
 
 ## Release History
+### 0.1.2
++ Fixed filename reference in package.json
+
 ### 0.1.1
 + Housekeeping (README additions, log output, etc.)
 

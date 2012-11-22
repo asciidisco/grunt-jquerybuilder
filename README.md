@@ -27,15 +27,15 @@ Example jQuery builder grunt file config entry:
 
 ```javascript
 // ... grunt file contents
-    query: {
+    jquery: {
       // the parts you want to exclude from your build
       // possible values ['ajax', 'css', 'deprecated', 'dimensions', 'effects', 'offset']
       exclude: ['ajax'],
       // the jQuery version (currently only 1.8.3 is supported) - defaults to 1.8.3
       version: '1.8.3',
-      // output location (relative to your grunt.js file location) - defaults to false
+      // output location (relative to your grunt.js file location)
       dest: 'build/jquery.custom.js',
-      // minify the output (true or false)
+      // minify the output (true or false) - defaults to false
       minify: false
     },
 // ... even more grunt file contents

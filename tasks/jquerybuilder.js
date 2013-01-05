@@ -30,8 +30,9 @@ module.exports = function (grunt) {
 
       // proceed with file content
       if (transport.type === 'content') {
-        grunt.log.write('Writing custom jQuery file');
+        grunt.log.write('Writing custom jQuery file...');
         grunt.file.write(options.config.dest, transport.content);
+        grunt.log.ok();
       }
 
       options.done();

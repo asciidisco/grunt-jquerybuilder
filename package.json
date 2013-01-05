@@ -31,7 +31,7 @@
     "test": "grunt travis --verbose"
   },
   "dependencies": {
-    "grunt": "0.3.x",
+    "grunt": "0.4.x",
     "jquery-builder": "0.1.x"
   },
   "keywords": [

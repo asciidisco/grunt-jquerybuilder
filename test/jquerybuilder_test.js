@@ -5,7 +5,7 @@ var grunt = require('grunt');
 grunt.loadTasks('tasks');
 
 exports.nodeunit = {
-  please_work: function (test) {
+  placeholder: function (test) {
     test.expect(1);
     test.ok(true, 'this had better work.');
     test.done();

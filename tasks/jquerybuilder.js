@@ -18,7 +18,7 @@ module.exports = function (grunt) {
   // TASKS
   // ==========================================================================
 
-  grunt.registerTask('jquery', 'Builds a customized jQuery', function(mode) {
+  grunt.registerTask('jquery', 'Builds a customized jQuery', function (mode) {
     var done = this.async(),
         config = grunt.config.get('jquery');
 

@@ -66,8 +66,8 @@ module.exports = function (grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint test');
+  grunt.registerTask('default', ['lint', 'test']);
 
-  // Default task.
-  grunt.registerTask('travis', 'lint test');
+  // Travis task. (Alias for the default task.)
+  grunt.registerTask('travis', 'default');
 };

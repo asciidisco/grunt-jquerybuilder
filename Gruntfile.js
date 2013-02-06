@@ -1,10 +1,13 @@
+/*jshint globalstrict: true*/
+/*global module: false*/
+
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: '<json:package.json>',
+    pkg: grunt.file.readJSON('package.json'),
     meta: {
       banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %>\n' +
         '------------------------------\n' +
@@ -30,17 +33,18 @@ module.exports = function(grunt) {
         'IN THE SOFTWARE.*/'
     },
 
-    test: {
-      files: ['test/**/*.js']
-    },
-
-    lint: {
-      files: ['grunt.js', 'tasks/**/*.js', 'lib/**/*.js', 'test/**/*.js']
+    nodeunit: {
+      test: ['test/**/*.js']
     },
 
     watch: {
-      files: '<config:lint.files>',
-      tasks: 'default'
+      scripts: {
+        files: '<%= jshint.files %>',
+        tasks: 'default',
+        options: {
+          interrupt: true
+        }
+      }
     },
 
     jshint: {
@@ -58,13 +62,15 @@ module.exports = function(grunt) {
         node: true,
         es5: true
       },
-      globals: {}
+      globals: {},
+      files: ['Gruntfile.js', 'tasks/**/*.js', 'lib/**/*.js', 'test/**/*.js']
     }
   });
 
-  // Default task.
-  grunt.registerTask('default', 'lint test');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-nodeunit');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task.
-  grunt.registerTask('travis', 'lint test');
+  grunt.registerTask('default', ['jshint:files', 'nodeunit:test']);
+  grunt.registerTask('travis', 'default');
 };

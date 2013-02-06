@@ -18,7 +18,7 @@ module.exports = function (grunt) {
   // TASKS
   // ==========================================================================
 
-  grunt.registerTask('jquery', 'Builds your custimized jquery experience', function(mode) {
+  grunt.registerTask('jquery', 'Builds a customized jQuery', function (mode) {
     var done = this.async(),
         config = grunt.config.get('jquery');
 
@@ -30,8 +30,9 @@ module.exports = function (grunt) {
 
       // proceed with file content
       if (transport.type === 'content') {
-        grunt.log.write('Writing custom jQuery file');
+        grunt.log.write('Writing custom jQuery file...');
         grunt.file.write(options.config.dest, transport.content);
+        grunt.log.ok();
       }
 
       options.done();

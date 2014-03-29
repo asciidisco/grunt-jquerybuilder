@@ -5,7 +5,7 @@ Simple grunt wrapper around the [jquery-builder](https://github.com/jgallen23/jq
 [![Build Status](https://secure.travis-ci.org/asciidisco/grunt-jquerybuilder.png?branch=master)](http://travis-ci.org/asciidisco/grunt-jquerybuilder)
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-jquerybuilder`
+Install this grunt plugin next to your project's [grunt.js gruntfile](http://gruntjs.com/getting-started) with: `npm install grunt-jquerybuilder`
 
 Then add this line to your project's `grunt.js` gruntfile.
 

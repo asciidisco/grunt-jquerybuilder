@@ -1,5 +1,7 @@
 # grunt-jquerybuilder
 
+> Mainatiner wanted! Please use [jquery-builder](https://github.com/jgallen23/jquery-builder) as no more issues will be fixed
+
 Simple grunt wrapper around the [jquery-builder](https://github.com/jgallen23/jquery-builder) from [@jgallen23](https://github.com/jgallen23).
 
 [![Build Status](https://secure.travis-ci.org/asciidisco/grunt-jquerybuilder.png?branch=master)](http://travis-ci.org/asciidisco/grunt-jquerybuilder)
